@@ -35,11 +35,11 @@ class FileStorage():
         pass
 
     def all(self):
-        """returns the dictionary '__objects'"""
+        """Returns the dictionary __objects"""
         return self.__objects
 
     def new(self, obj):
-        """sets in '__objects' the 'obj' with key '<obj class name>.id'"""
+        """Sets in __objects the obj with key <obj class name>.id"""
         key = obj.__class__.__name__+"."+obj.id
         self.__objects.update({key: obj})
 
